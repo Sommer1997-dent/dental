@@ -1,0 +1,168 @@
+/* Allgemeine Seitenstruktur */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #81d8d0,
+    #bffcf6
+  ); /* Gradient Hintergrund */
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container für den Hauptbereich */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titel */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #3498db;
+}
+
+/* Buttons für die Kategorien */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.categories button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.categories button:nth-child(1) {
+  background-color: #3498db;
+}
+
+.categories button:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+.categories button:nth-child(3) {
+  background-color: #2ecc71;
+}
+
+.categories button.selected {
+  transform: scale(1.05);
+}
+
+.categories button:hover {
+  transform: scale(1.05);
+}
+
+/* Textbausteine */
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.block-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.block-btn:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+/* Gemeinsames Textfeld */
+.selected-text {
+  margin-top: 40px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #f0f8ff;
+  border: 2px solid #1e90ff;
+  border-radius: 10px;
+  color: black;
+  resize: none;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #00bfff; /* Blau, wenn textarea fokussiert */
+}
+
+/* Button für den Editor */
+.add-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hinzufügen der Kategorien-Buttons im Editor */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.category-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.category-button:nth-child(1) {
+  background-color: #3498db;
+}
+
+.category-button:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+.category-button:nth-child(3) {
+  background-color: #2ecc71;
+}
+
+.category-button:hover {
+  transform: scale(1.05);
+}
